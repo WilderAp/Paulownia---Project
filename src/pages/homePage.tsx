@@ -1,9 +1,13 @@
+import About from "@/components/common/About";
+import Hero from "@/components/common/Hero";
+
 export const HomePage = () => {
   return (
     <section className="min-h-screen">
-      <h1>Home</h1>
+      <Hero />
+      <About />
     </section>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;
