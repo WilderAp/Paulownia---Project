@@ -13,6 +13,7 @@ export default {
         secondary: '#6828B0',
         customGrey: '#707070',
         title: '#314E52',
+        bgSection: '#FAFAFA',
       },
       invert: {
         25: '.25',
