@@ -1,5 +1,5 @@
-import About from "@/components/common/About";
-import Hero from "@/components/common/Hero";
+import About from '@/components/common/About'
+import Hero from '@/components/common/Hero'
 
 export const HomePage = () => {
   return (
@@ -7,7 +7,7 @@ export const HomePage = () => {
       <Hero />
       <About />
     </section>
-  );
-};
+  )
+}
 
-export default HomePage;
+export default HomePage
