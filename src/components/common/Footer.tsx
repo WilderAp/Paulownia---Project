@@ -79,7 +79,7 @@ const renderSocialLinks = () => (
 )
 
 export const Footer: React.FC = () => (
-  <footer className="bg-[#E6E6E6] pb-6 pt-[64px] font-ptSans w-full text-[#707070] md:text-black">
+  <footer className="bg-[#E6E6E6] pb-6 pt-[64px] font-ptSans w-full text-[#707070] md:text-black mt-[150px]">
     <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 px-4 sm:px-[12%] 2xl:px-[6%] md:h-[370px]">
       {/* Sección 1: Impulsado por */}
       <div className="col-span-1 md:col-span-2 space-y-4 md:space-y-[32px]">
