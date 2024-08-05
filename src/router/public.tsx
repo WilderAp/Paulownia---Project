@@ -4,7 +4,6 @@ import Items from '@/pages/Items'
 export const publicRoutes = [
   {
     path: '/',
-    path: '/',
     element: <HomePage />,
   },
   {
@@ -21,8 +20,6 @@ export const publicRoutes = [
   },
   {
     path: '/register',
-    path: '/register',
     element: <div className="w-[1440px] h-100">Register</div>,
   },
-]
 ]

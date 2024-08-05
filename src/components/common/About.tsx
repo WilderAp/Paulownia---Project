@@ -1,12 +1,8 @@
-import { Layout } from './Layout'
-import { Layout } from './Layout'
-
 function About() {
   return (
     <div className="bg-primary min-h-[352px] flex items-center">
       {/* Mobile */}
       <section className="text-white block sm:hidden p-4">
-        <h1 className="font-bold mx-auto" style={{ fontFamily: 'Raleway' }}>
         <h1 className="font-bold mx-auto" style={{ fontFamily: 'Raleway' }}>
           Sobre este proyecto
         </h1>
@@ -20,8 +16,8 @@ function About() {
           </p>
           <p>
             Paulownia además se diversifica en tres subproyectos adicionales:{' '}
-            <b>Jumperland, Paulownia</b> Cosméticos y el libro{' '}
-            Paulownia además se diversifica en tres subproyectos adicionales:{' '}
+            <b>Jumperland, Paulownia</b> Cosméticos y el libro Paulownia además
+            se diversifica en tres subproyectos adicionales:{' '}
             <b>Jumperland, Paulownia</b> Cosméticos y el libro{' '}
             <b>“El Sueño de Paulownia”</b>.
           </p>
@@ -57,7 +53,5 @@ function About() {
       </section>
     </div>
   )
-  )
 }
-export default About
 export default About

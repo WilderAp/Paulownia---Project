@@ -1,8 +1,8 @@
-import arrow from "../../../public/pictures/arrow.png";
-import news from "../../../public/pictures/news.png";
-import tree from "../../../public/pictures/tree.jpeg";
-import world from "../../../public/pictures/world.png";
-import { Layout } from "./Layout";
+import arrow from '../../../public/pictures/arrow.png'
+import news from '../../../public/pictures/news.png'
+import tree from '../../../public/pictures/tree.jpeg'
+import world from '../../../public/pictures/world.png'
+import { Layout } from './Layout'
 
 function Hero() {
   return (
@@ -13,7 +13,7 @@ function Hero() {
           <img
             src={tree}
             alt="treeMobile"
-            style={{ borderRadius: "32px" }}
+            style={{ borderRadius: '32px' }}
             content="cover"
           />
         </section>
@@ -21,9 +21,9 @@ function Hero() {
           <div className=" text-primary">
             <h1
               style={{
-                fontFamily: "Raleway",
-                fontSize: "22px",
-                fontWeight: "700",
+                fontFamily: 'Raleway',
+                fontSize: '22px',
+                fontWeight: '700',
               }}
             >
               El árbol de nuestros sueños lo hemos encontrado. Te contamos por
@@ -88,6 +88,6 @@ function Hero() {
         </Layout>
       </div>
     </div>
-  );
+  )
 }
-export default Hero;
+export default Hero
