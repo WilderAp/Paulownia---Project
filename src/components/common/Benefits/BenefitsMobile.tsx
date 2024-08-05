@@ -12,19 +12,24 @@ const items = [
 
 const BenefitsMobile = () => {
   return (
-    <section className="xl:hidden  py-[64px]">
+    <section className="xl:hidden py-[64px]">
       <Layout>
         {/* container image , texts and list */}
-        <div className="flex flex-wrap">
-          <div className="mx-auto  ">
-            <figure className="w-[396px] h-[204px]">
+        <div className="flex flex-col md:flex-row md:gap-5">
+          <div className="mx-auto md:mx-0 w-full  md:w-[50%] ">
+            <figure className="w-full h-[204px] ">
               <img
                 src="/pictures/benefits/mobile/one.png"
                 alt="a"
                 className="rounded-[16px]  w-full h-full object-cover"
               />
             </figure>
-            <div className="w-[430px] mx-auto py-[12px] pr-[24px] pl-[16px] flex flex-col gap-[16px] text-customGrey">
+            <div
+              className="
+              w-full mx-auto py-[12px] pr-[24px] pl-[16px] flex flex-col gap-[16px]
+             text-customGrey
+             "
+            >
               <h2 className="text-[16px] font-raleway font-bold ">
                 Beneficios que obtenemos
               </h2>
@@ -36,7 +41,7 @@ const BenefitsMobile = () => {
               </p>
             </div>
           </div>
-          <ul className="w-[398px] mx-auto flex flex-col gap-[20px] mt-4 ">
+          <ul className="w-[90vw] mx-auto md:mx-0 flex flex-col gap-[20px] mt-4 flex-1">
             {items.map((item) => (
               <li
                 key={crypto.randomUUID()}
@@ -50,8 +55,8 @@ const BenefitsMobile = () => {
         </div>
 
         {/* container images and text */}
-        <div className="w-full mx-auto mt-8 flex flex-col md:flex-row justify-between gap-2">
-          <div className="flex flex-col gap-5 w-[398px] mx-auto md:mx-0 md:w-[50%]">
+        <div className="w-[90vw] md:w-full mx-auto mt-8 flex flex-col  md:flex-row md:justify-around md:gap-5">
+          <div className="flex flex-col  w-full  gap-5 mx-auto md:mx-0 md:w-[50%]">
             <figure className="h-[500px] w-full">
               <img
                 src="/pictures/benefits/mobile/two.jfif"
@@ -59,7 +64,7 @@ const BenefitsMobile = () => {
                 className="rounded-[16px]  w-full h-full object-cover"
               />
             </figure>
-            <div className="bg-[#F8F8F8]  rounded-[16px] py-[32px] px-[30px] h-[230px] grid place-content-center">
+            <div className="bg-[#F8F8F8] w-full rounded-[16px] py-[32px] px-[30px] h-[230px] grid place-content-center">
               <h3 className="font-bold font-raleway text-[16px]">Visión</h3>
               <p className="font-normal font-ptSans text-[14px] mt-5">
                 Combinar innovación, naturaleza y sostenibilidad para generar un
@@ -69,7 +74,7 @@ const BenefitsMobile = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col w-[398px] gap-5 mx-auto md:mx-0 md:w-[50%]">
+          <div className="flex flex-col w-full gap-5 mx-auto md:mx-0 md:w-[50%]">
             <figure className="h-[500px] w-full">
               <img
                 src="/pictures/benefits/mobile/three.jfif"
@@ -77,7 +82,7 @@ const BenefitsMobile = () => {
                 className="rounded-[16px] w-full h-full object-cover"
               />
             </figure>
-            <div className="bg-[#F8F8F8]  rounded-[16px] py-[32px] px-[30px] h-[230px] grid place-content-center">
+            <div className="bg-[#F8F8F8] w-full rounded-[16px] py-[32px] px-[30px] h-[230px] grid place-content-center">
               <h3 className="font-bold font-raleway text-[16px]">Misión</h3>
               <p className="font-normal font-ptSans text-[14px] mt-5">
                 Aportamos un valor diferencial en la industria de la madera
