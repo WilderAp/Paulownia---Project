@@ -18,6 +18,8 @@ function About() {
           </p>
           <p>
             Paulownia además se diversifica en tres subproyectos adicionales:{' '}
+            <b>Jumperland, Paulownia</b> Cosméticos y el libro Paulownia además
+            se diversifica en tres subproyectos adicionales:{' '}
             <b>Jumperland, Paulownia</b> Cosméticos y el libro{' '}
             <b>“El Sueño de Paulownia”</b>.
           </p>
