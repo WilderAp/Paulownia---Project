@@ -48,7 +48,7 @@ const textSize = '20 px'
 export const Navbar = () => {
   return (
     <header className="w-full bg-black px-[32px] ">
-      <nav className="navbar z-10  text-white  max-w-[1535px] mx-auto h-[80px] ">
+      <nav className="navbar z-10  text-white  max-w-[1200px] mx-auto h-[80px] ">
         <div className="navbar-start">
           {/* logo */}
           <div className="w-[181px]">
