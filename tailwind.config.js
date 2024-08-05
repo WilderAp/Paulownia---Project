@@ -14,6 +14,7 @@ export default {
         customGrey: '#707070',
         title: '#314E52',
         bgSection: '#FAFAFA',
+        bgBox: '#F8F8F8',
       },
       invert: {
         25: '.25',
