@@ -10,7 +10,7 @@ export const Layout: React.FC<LayoutProps> = ({
   children,
 }) => {
   return (
-    <div className={` w-full ${maxWidth} mx-auto px-[10px] py-4`}>
+    <div className={` w-full ${maxWidth} mx-auto px-[16px] py-4`}>
       {children}
     </div>
   )

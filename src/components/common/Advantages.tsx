@@ -1,6 +1,7 @@
+import type { advantagesItem } from '@/types'
 import { Layout } from './Layout'
 
-const data = [
+const data: advantagesItem[] = [
   {
     id: 1,
     title: 'Crecimiento rápido y versátil',
@@ -30,26 +31,33 @@ const data = [
 const Advantages = () => {
   return (
     <>
-      <div className="w-full grid place-content-center py-10 px-4 ">
-        <h2 className="hidden lg:flex justify-center w-full mb-[64px] text-title h-[50px] text-[36px] font-semibold">
+      <div className="w-full grid place-content-center py-10  ">
+        <h2 className="hidden lg:flex justify-center w-full mb-[64px] mt-[75px] text-title  text-[36px] font-semibold">
           Ventajas del cultivo Paulownia
         </h2>
         <Layout>
           <article className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 xl:grid-cols-12  w-full h-min">
-            <div className="w-full lg:max-w-[668px] h-[448px] lg:h-[1000px] col-span-1 sm:col-span-2 lg:col-span-3  xl:col-span-5">
+            <div
+              className="w-full lg:max-w-[668px] h-[448px] lg:h-[1000px] col-span-1
+             sm:col-span-2 lg:col-span-3  xl:col-span-5
+             "
+            >
               <img
                 src="./pictures/advantages.png"
                 alt="plant-paulownia"
-                className=" object-cover w-full h-full rounded-[30px]"
+                className=" object-cover w-full h-full rounded-[16px] lg:rounded-[32px]"
               />
             </div>
 
-            <h2 className="flex lg:hidden w-full text-title text-[22px] font-semibold col-span-1 sm:col-span-2 my-4">
+            <h2
+              className="flex lg:hidden w-full text-title text-[22px] font-semibold col-span-1 sm:col-span-2
+             my-[16px]"
+            >
               Ventajas del cultivo Paulownia
             </h2>
 
             {/* number section */}
-            <div className="flex flex-col gap-4 lg:gap-8 lg:ml-[64px] col-span-1  sm:col-span-2 lg:col-span-3  xl:col-span-7 lg:h-[1000px]">
+            <div className="flex flex-col gap-[32px] lg:gap-8 lg:ml-[64px] col-span-1  sm:col-span-2 lg:col-span-3  xl:col-span-7 lg:h-[1000px]">
               {data.map((element) => (
                 <div key={element.id} className="flex w-full gap-4 lg:gap-8">
                   <div className="">

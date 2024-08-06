@@ -8,7 +8,7 @@ interface BannerProps {
 export const Banner: React.FC<BannerProps> = ({ title }) => {
   return (
     <div
-      className="h-[241px] flex justify-center items-center text-white text-center bg-cover bg-center"
+      className="h-[241px] flex justify-center items-center text-white text-center bg-cover bg-center mt-[80px]"
       style={{
         backgroundImage: `url(${bannerpng})`,
         fontFamily: 'Raleway',

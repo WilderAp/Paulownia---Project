@@ -1,7 +1,7 @@
 import { FaCheck } from 'react-icons/fa'
 import { Layout } from '../Layout'
 
-const items = [
+const items: string[] = [
   'Empleo en las comunidades locales',
   'Proyectos educativos y concienciación',
   'Turismo ecológico',
@@ -12,16 +12,17 @@ const items = [
 
 const BenefitsMobile = () => {
   return (
-    <section className="xl:hidden py-[64px]">
+    <section className="xl:hidden pt[42px]">
       <Layout>
         {/* container image , texts and list */}
         <div className="flex flex-col md:flex-row md:gap-5">
+          {/* image */}
           <div className="mx-auto md:mx-0 w-full  md:w-[50%] ">
-            <figure className="w-full h-[204px] ">
+            <figure className="w-full h-[204px] mb-[16px]">
               <img
                 src="/pictures/benefits/mobile/one.png"
                 alt="a"
-                className="rounded-[16px]  w-full h-full object-cover"
+                className="rounded-[16px] lg:rounded-[32px]  w-full h-full object-cover"
               />
             </figure>
             <div
@@ -30,7 +31,7 @@ const BenefitsMobile = () => {
              text-customGrey
              "
             >
-              <h2 className="text-[16px] font-raleway font-bold ">
+              <h2 className="text-[16px] font-raleway font-bold">
                 Beneficios que obtenemos
               </h2>
               <p className="font-normal text-[14px]  font-ptSans">
@@ -41,11 +42,12 @@ const BenefitsMobile = () => {
               </p>
             </div>
           </div>
-          <ul className="w-[90vw] mx-auto md:mx-0 flex flex-col gap-[20px] mt-4 flex-1">
+          {/* list */}
+          <ul className="w-[90vw] mx-auto md:mx-0 flex flex-col gap-[20px] mt-[16px] flex-1">
             {items.map((item) => (
               <li
                 key={crypto.randomUUID()}
-                className="flex gap-2 items-center text-[12px] font-ptSans"
+                className="flex gap-[8px] items-center text-[12px] font-ptSans"
               >
                 <FaCheck className="text-primary text-[20px]" />
                 {item}
@@ -55,16 +57,16 @@ const BenefitsMobile = () => {
         </div>
 
         {/* container images and text */}
-        <div className="w-[90vw] md:w-full mx-auto mt-8 flex flex-col  md:flex-row md:justify-around md:gap-5">
-          <div className="flex flex-col  w-full  gap-5 mx-auto md:mx-0 md:w-[50%]">
+        <div className="w-[90vw] md:w-full mx-auto mt-[60px] flex flex-col  gap-[16px]  md:flex-row md:justify-around md:gap-5">
+          <div className="flex flex-col  w-full  gap-[16px] mx-auto md:mx-0 md:w-[50%]">
             <figure className="h-[500px] w-full">
               <img
                 src="/pictures/benefits/mobile/two.jfif"
                 alt="b"
-                className="rounded-[16px]  w-full h-full object-cover"
+                className="rounded-[16px] lg:rounded-[32px]  w-full h-full object-cover"
               />
             </figure>
-            <div className="bg-[#F8F8F8] w-full rounded-[16px] py-[32px] px-[30px] h-[230px] grid place-content-center">
+            <div className="bg-[#F8F8F8] w-full rounded-[16px] lg:rounded-[32px] py-[32px] px-[30px] h-[230px] grid place-content-center">
               <h3 className="font-bold font-raleway text-[16px]">Visión</h3>
               <p className="font-normal font-ptSans text-[14px] mt-5">
                 Combinar innovación, naturaleza y sostenibilidad para generar un
@@ -79,10 +81,10 @@ const BenefitsMobile = () => {
               <img
                 src="/pictures/benefits/mobile/three.jfif"
                 alt="b"
-                className="rounded-[16px] w-full h-full object-cover"
+                className="rounded-[16px] lg:rounded-[32px] w-full h-full object-cover"
               />
             </figure>
-            <div className="bg-[#F8F8F8] w-full rounded-[16px] py-[32px] px-[30px] h-[230px] grid place-content-center">
+            <div className="bg-[#F8F8F8] w-full rounded-[16px] lg:rounded-[32px] py-[32px] px-[30px] h-[230px] grid place-content-center">
               <h3 className="font-bold font-raleway text-[16px]">Misión</h3>
               <p className="font-normal font-ptSans text-[14px] mt-5">
                 Aportamos un valor diferencial en la industria de la madera

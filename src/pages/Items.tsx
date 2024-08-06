@@ -11,7 +11,7 @@ function Items() {
       <Layout>
         <div className="grid py-10 px-4 md:px-0 md:grid-cols-2 lg:grid-cols-3  md:py-24 gap-5">
           {itemsData.map((item) => (
-            <Link to={`/items/${item._id}`} key={item._id}>
+            <Link to={`/corporativo/${item._id}`} key={item._id}>
               <CardItem
                 title={item.info}
                 _id={item._id}

@@ -7,11 +7,11 @@ export const publicRoutes = [
     element: <HomePage />,
   },
   {
-    path: '/items',
+    path: '/corporativo',
     element: <Items />,
   },
   {
-    path: '/items/:id',
+    path: '/corporativo/:id',
     element: <ItemsDetail />,
   },
   {
