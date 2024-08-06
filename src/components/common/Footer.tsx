@@ -80,7 +80,7 @@ const renderSocialLinks = () => (
 
 export const Footer: React.FC = () => (
   <footer className="bg-[#E6E6E6] pb-6 pt-[64px] font-ptSans w-full text-[#707070] md:text-black mt-[150px]">
-    <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 px-4 sm:px-[12%] 2xl:px-[6%] md:h-[370px]">
+    <div className="max-w-[1243px] mx-auto grid grid-cols-1 md:grid-cols-4 px-4 sm:px-[12%] 2xl:px-[6%] md:h-[370px]">
       {/* Sección 1: Impulsado por */}
       <div className="col-span-1 md:col-span-2 space-y-4 md:space-y-[32px]">
         <h4 className="font-bold text-[16px] sm:text-[32px] 2xl:text-[42px] font-raleway">
@@ -103,7 +103,7 @@ export const Footer: React.FC = () => (
           />
         )}
         {data.sections[0].content && (
-          <p className="text-[14px] md:text-[22px] md:w-3/4">
+          <p className="text-[14px] md:text-[22px] md:w-3/4 font-ptSans">
             {data.sections[0].content.content}
           </p>
         )}
@@ -133,7 +133,7 @@ export const Footer: React.FC = () => (
       <div className="col-span-1 mt-4 sm:mt-0 md:px-4 md:ml-4 space-y-4 md:space-y-[32px] w-[90%]">
         <h4 className="text-[16px] md:text-[24px]">{data.sections[2].title}</h4>
         {data.sections[2].content && (
-          <p className="text-[14px] md:text-[20px]">
+          <p className="text-[14px] md:text-[20px] font-ptSans">
             {data.sections[2].content.content}
           </p>
         )}
@@ -154,9 +154,9 @@ export const Footer: React.FC = () => (
       </div>
     </div>
     <hr className="border-t-1 border-black md:my-[64px] w-[80%] mx-auto" />
-    <div className="flex flex-col md:flex-row items-center justify-between mt-8 font-inter text-center text-[14px] md:text-[18px] px-[2px] md:px-[10%]">
+    <div className="max-w-[1243px] md:mx-auto flex flex-col md:flex-row items-center justify-between mt-8 font-inter text-center text-[14px] md:text-[18px] px-[2px] md:px-[10px] xl:px-0">
       <p>{data.copyRight[0].content}</p>
-      <div className="flex items-center gap-4 mt-4 md:mt-0">
+      <div className="flex items-center gap-4 mt-4 md:mt-0 font-inter">
         {data.copyRight.slice(1).map((item) => (
           <a
             href={item.href}
