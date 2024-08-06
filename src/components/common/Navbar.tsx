@@ -1,6 +1,6 @@
 import type { NavLink } from '@/interfaces'
-import LOGO from '../../assets/LOGO.png'
 import { GiHamburgerMenu } from 'react-icons/gi'
+import LOGO from '../../assets/LOGO.png'
 
 const NavLinks: NavLink[] = [
   {
