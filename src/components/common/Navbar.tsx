@@ -1,4 +1,5 @@
 import type { NavLink } from '@/interfaces'
+import { Link } from 'react-router-dom'
 import LOGO from '../../assets/LOGO.png'
 
 const NavLinks: NavLink[] = [
@@ -66,7 +67,7 @@ export const Navbar = () => {
                     <ul className="p-2 w-[150px]  rounded-[16px] text-[18px] bg-white text-black">
                       {submenu.map(({ name, submenuHref }) => (
                         <li key={crypto.randomUUID()}>
-                          <a href={submenuHref}>{name}</a>
+                          <Link to={submenuHref}>{name}</Link>
                         </li>
                       ))}
                     </ul>
@@ -74,7 +75,7 @@ export const Navbar = () => {
                 </li>
               ) : (
                 <li key={crypto.randomUUID()}>
-                  <a href={href}>{name}</a>
+                  <Link to={href}>{name}</Link>
                 </li>
               )
             )}
