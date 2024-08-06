@@ -4,12 +4,12 @@ import LOGO from '../../assets/LOGO.png'
 const NavLinks: NavLink[] = [
   {
     name: 'Inicio',
-    href: '#',
+    href: '/',
     submenu: [],
   },
   {
     name: 'Corporativo',
-    href: '#',
+    href: '/items',
     submenu: [],
   },
   {
