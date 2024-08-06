@@ -1,4 +1,5 @@
 import type React from 'react'
+import bannerpng from '../../../public/pictures/banner.png'
 
 interface BannerProps {
   title?: string
@@ -7,8 +8,9 @@ interface BannerProps {
 export const Banner: React.FC<BannerProps> = ({ title }) => {
   return (
     <div
-      className="bg-[#0C7333] h-[241px] flex justify-center items-center text-white text-center"
+      className="h-[241px] flex justify-center items-center text-white text-center bg-cover bg-center"
       style={{
+        backgroundImage: `url(${bannerpng})`,
         fontFamily: 'Raleway',
       }}
     >
