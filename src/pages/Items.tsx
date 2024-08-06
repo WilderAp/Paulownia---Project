@@ -8,8 +8,8 @@ function Items() {
   return (
     <div>
       <Banner title="Código de la conducta de la Unión Europea" />
-      <Layout maxWidth="max-w-[1500px]">
-        <div className="grid py-10 px-7 md:px-0 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:py-24 gap-5">
+      <Layout>
+        <div className="grid py-10 px-4 md:px-0 md:grid-cols-2 lg:grid-cols-3  md:py-24 gap-5">
           {itemsData.map((item) => (
             <Link to={`/items/${item._id}`} key={item._id}>
               <CardItem

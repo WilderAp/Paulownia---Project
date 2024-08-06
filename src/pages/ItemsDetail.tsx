@@ -15,7 +15,7 @@ export const ItemsDetail = () => {
   return (
     <div>
       <Banner title={item.title} />
-      <Layout maxWidth="max-w-[1500px]">
+      <Layout>
         <div className="p-4 md:py-20 md:px-40 min-h-[400px] flex flex-col gap-10">
           <p>{item.description}</p>
           {item.description2 && <p>{item.description2}</p>}
