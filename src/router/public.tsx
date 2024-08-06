@@ -1,5 +1,5 @@
-import { HomePage, ItemsDetail } from '@/pages'
-import Items from '@/pages/Items'
+import { HomePage, ItemsDetail } from '@/pages';
+import Items from '@/pages/Items';
 
 export const publicRoutes = [
   {
@@ -7,19 +7,19 @@ export const publicRoutes = [
     element: <HomePage />,
   },
   {
-    path: '/items',
+    path: '/corporativo',
     element: <Items />,
   },
   {
-    path: '/items/:id',
+    path: '/corporativo/:id',
     element: <ItemsDetail />,
   },
   {
     path: '/login',
-    element: <div className="w-[1440px] h-100">Login</div>,
+    element: <div className='w-[1440px] h-100'>Login</div>,
   },
   {
     path: '/register',
-    element: <div className="w-[1440px] h-100">Register</div>,
+    element: <div className='w-[1440px] h-100'>Register</div>,
   },
-]
+];
