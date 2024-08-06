@@ -6,26 +6,19 @@ import { Layout } from './Layout'
 
 function Hero() {
   return (
-    <div>
+    <div id="inicio" className="py-[calc(80px+1rem)]">
       {/* Mobile */}
-      <div className="px-[10px] py-[50px] block lg:hidden">
+      <div className="px-[10px] mt-[16px] pb-[42px] block lg:hidden  animate-fade animate-once animate-duration-1000 animate-ease-in">
         <section>
           <img
             src={tree}
             alt="treeMobile"
-            style={{ borderRadius: '32px' }}
-            content="cover"
+            className="rounded-[16px] object-cover aspect-square"
           />
         </section>
         <section className="mt-4">
           <div className=" text-primary">
-            <h1
-              style={{
-                fontFamily: 'Raleway',
-                fontSize: '22px',
-                fontWeight: '700',
-              }}
-            >
+            <h1 className="font-raleway text-[22px] font-bold">
               El árbol de nuestros sueños lo hemos encontrado. Te contamos por
               qué.
             </h1>
@@ -33,7 +26,7 @@ function Hero() {
           <div>
             <button
               type="button"
-              className="bg-secondary w-[176px] py-3 rounded-lg text-white my-4 flex items-center gap-3 justify-center"
+              className="bg-secondary  hover:bg-opacity-80 w-[176px] h-[42px] py-3 rounded-lg text-white my-4 flex items-center gap-3 justify-center"
             >
               Seguir leyendo
               <img src={arrow} alt="arrow" />
@@ -49,9 +42,9 @@ function Hero() {
         </section>
       </div>
       {/* Desktop */}
-      <div className="py-20 hidden lg:block h-fit">
+      <div className="min-h-screen mt-[16px] hidden lg:block animate-fade animate-once animate-duration-1000 animate-ease-in">
         <Layout>
-          <div className="grid lg:grid-cols-12  items-center gap-[60px]">
+          <div className="grid lg:grid-cols-12  items-center gap-[64px]">
             <section className=" lg:col-span-7 flex flex-col justify-center gap-5  h-[634px] ">
               <div className=" text-primary max-w-[887px]">
                 <h1 className="text-[50px] font-bold font-raleway">
@@ -62,7 +55,7 @@ function Hero() {
               <div>
                 <button
                   type="button"
-                  className="bg-secondary w-[176px] p-2 rounded-lg text-white my-10"
+                  className="bg-secondary  hover:bg-opacity-80 w-[176px] h-btnMobileH md:h-btnDesktopH p-2 rounded-lg text-white my-10"
                 >
                   Seguir leyendo
                 </button>
@@ -80,7 +73,7 @@ function Hero() {
                 <img
                   src={tree}
                   alt="tree"
-                  className="object-cover w-full h-full rounded-[32px]"
+                  className="object-cover w-full h-full rounded-[32px] aspect-square"
                 />
               </div>
             </section>

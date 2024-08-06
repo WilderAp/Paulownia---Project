@@ -1,10 +1,11 @@
 import type { NavLink } from '@/interfaces'
 import LOGO from '../../assets/LOGO.png'
+import { GiHamburgerMenu } from 'react-icons/gi'
 
 const NavLinks: NavLink[] = [
   {
     name: 'Inicio',
-    href: '/',
+    href: '#inicio',
     submenu: [],
   },
   {
@@ -43,11 +44,11 @@ const NavLinks: NavLink[] = [
 ]
 
 const contactHref = 'example-blog.com'
-const textSize = '20 px'
+const textSize = '20px'
 
 export const Navbar = () => {
   return (
-    <header className="w-full bg-black px-[32px] ">
+    <header className="w-full bg-black px-[32px] fixed top-0 z-10">
       <nav className="navbar z-10  text-white  max-w-[1200px] mx-auto h-[80px] ">
         <div className="navbar-start">
           {/* logo */}
@@ -83,7 +84,7 @@ export const Navbar = () => {
           <div>
             <a
               className={`btn bg-white text-black hover:bg-white hover:text-black hover:opacity-[90%] 
-              rounded-[8px]  w-[150px] h-[48px] font-normal text-[${textSize}]
+              rounded-[8px]  w-[150px] h-btnMobileH md:h-btnDesktopH font-normal text-[${textSize}]
                `}
               href={`${contactHref}`}
               target="_blank"
@@ -94,24 +95,13 @@ export const Navbar = () => {
           </div>
         </div>
         {/* hamburguer */}
-        <div className="dropdown ml-auto">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-10 w-10"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              role="img"
-              aria-label="menu"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
+        <div className="dropdown ml-auto  ">
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn btn-ghost lg:hidden h-[42px]"
+          >
+            <GiHamburgerMenu className="w-10 h-10" />
           </div>
           {/* menu mobile */}
           <ul

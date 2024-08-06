@@ -1,13 +1,13 @@
 import { FaCheck } from 'react-icons/fa'
 import { Layout } from '../Layout'
 
-const images = [
+const images: string[] = [
   './pictures/benefits/desktop/one.jfif',
   './pictures/benefits/desktop/two.png',
   './pictures/benefits/desktop/three.jfif',
 ]
 
-const list = [
+const list: string[] = [
   'Empleo en las comunidades locales',
   'Turismo ecológico',
   'Proyectos educativos y de concienciación',
@@ -34,7 +34,7 @@ const BenefitsDesktop = () => {
         </div>
         {/* container list and images */}
         <div className="mt-[90px] flex gap-10 items-center w-full h-[520px]">
-          <ul className="min-w-[400px] max-w-[400px] h-full flex flex-col justify-around">
+          <ul className="w-[468px] h-full flex flex-col justify-around">
             {list.map((item) => (
               <li
                 key={crypto.randomUUID()}
@@ -45,21 +45,22 @@ const BenefitsDesktop = () => {
               </li>
             ))}
           </ul>
-          <div className="w-full h-full flex gap-4 relative ">
+
+          <div className="w-full h-full flex gap-4 relative">
             {images.map((img, index) => (
               <img
                 src={img}
                 alt="benefits"
                 key={crypto.randomUUID()}
-                className={`w-[33%] h-full object-cover rounded-[32px] ${
-                  index === 1 ? 'blur-[3px]' : ''
+                className={`w-[260px] h-full object-cover rounded-[32px] ${
+                  index === 1 ? 'drop-shadow-md' : ''
                 }`}
               />
             ))}
             <img
               src="./pictures/benefits/desktop/two-plant-png.png"
               alt="benefits"
-              className="absolute mx-auto bottom-[-2px] left-[-25px] z-2   object-cover"
+              className="absolute mx-auto bottom-[-26px] left-[-45px] z-2   object-cover"
             />
             ;
           </div>

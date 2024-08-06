@@ -16,6 +16,13 @@ export default {
         bgSection: '#FAFAFA',
         bgBox: '#F8F8F8',
       },
+      borderRadius: {
+        customRadius: '16px',
+      },
+      height: {
+        btnMobileH: '42px',
+        btnDesktopH: '48px',
+      },
       invert: {
         25: '.25',
         50: '.5',
@@ -23,5 +30,5 @@ export default {
       },
     },
   },
-  plugins: [require('daisyui')],
+  plugins: [require('daisyui'), require('tailwindcss-animated')],
 };
