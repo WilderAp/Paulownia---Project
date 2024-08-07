@@ -1,29 +1,29 @@
-import { useEffect, useState } from 'react';
-import { IoIosArrowUp } from 'react-icons/io';
+import { useEffect, useState } from 'react'
+import { IoIosArrowUp } from 'react-icons/io'
 
 const ScrollToTop = () => {
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(false)
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
-    });
-  };
+    })
+  }
 
   useEffect(() => {
     const onScroll = () => {
       if (window.scrollY > 100) {
-        setScrolled(true);
+        setScrolled(true)
       } else {
-        setScrolled(false);
+        setScrolled(false)
       }
-    };
+    }
 
-    window.addEventListener('scroll', onScroll);
+    window.addEventListener('scroll', onScroll)
 
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
 
   return (
     <button
@@ -35,6 +35,6 @@ const ScrollToTop = () => {
     >
       <IoIosArrowUp />
     </button>
-  );
-};
-export default ScrollToTop;
+  )
+}
+export default ScrollToTop
