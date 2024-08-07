@@ -8,7 +8,7 @@ function Hero() {
   return (
     <div id="inicio" className="py-[calc(80px+16px)] lg:py-[calc(80px+3rem)]">
       {/* Mobile */}
-      <div className="px-[10px] mt-[16px] pb-[42px] block lg:hidden  animate-fade animate-once animate-duration-1000 animate-ease-in">
+      <div className="px-[16px] mt-[16px] pb-[42px] block lg:hidden  animate-fade animate-once animate-duration-1000 animate-ease-in">
         <section>
           <img
             src={tree}

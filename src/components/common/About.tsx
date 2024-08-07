@@ -5,7 +5,7 @@ function About() {
     <div className="bg-primary w-full">
       <Layout>
         <section
-          className="text-white  w-full  p-[24px] sm:h-[352px] 
+          className="text-white  w-full  py-[24px] sm:h-[352px] 
           sm:grid sm:grid-cols-12  sm:items-center
         "
         >
