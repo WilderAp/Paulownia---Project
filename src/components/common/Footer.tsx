@@ -7,9 +7,9 @@ import {
   phone,
   x,
   youtube,
-} from '@/assets/index'
-import type { FooterData } from '@/interfaces'
-import type React from 'react'
+} from '@/assets/index';
+import type { FooterData } from '@/interfaces';
+import type React from 'react';
 
 // Datos del footer
 const data: FooterData = {
@@ -53,7 +53,7 @@ const data: FooterData = {
     { id: 3, content: 'Política de cookies', href: '/cookies' },
     { id: 4, content: 'Aviso legal', href: '/legal' },
   ],
-}
+};
 
 // Enlaces sociales
 const socialLinks = [
@@ -62,7 +62,7 @@ const socialLinks = [
   { href: 'https://linkedin.com', src: linkedin, alt: 'LinkedIn' },
   { href: 'https://instagram.com', src: instagram, alt: 'Instagram' },
   { href: 'https://youtube.com', src: youtube, alt: 'YouTube' },
-]
+];
 
 const renderSocialLinks = () => (
   <div className="flex gap-6 mt-6 md:mt-[32px] items-center flex-wrap">
@@ -76,7 +76,7 @@ const renderSocialLinks = () => (
       </a>
     ))}
   </div>
-)
+);
 
 export const Footer: React.FC = () => (
   <footer className="bg-[#E6E6E6] pb-6 pt-[48px] md:pt-[64px] font-ptSans w-full text-[#707070] md:text-black ">
@@ -131,7 +131,7 @@ export const Footer: React.FC = () => (
 
       {/* Sección 3: Blog / Newsletter */}
       <div className="col-span-1 mt-4 sm:mt-0 md:px-2 md:ml-4 space-y-4 md:space-y-[32px]">
-        <h4 className="text-[16px] md:text-[24px] mt-4 font-bold md:mt-0">
+        <h4 className="text-[16px] md:text-[24px] mt-4 font-bold md:font-normal md:mt-0">
           {data.sections[2].title}
         </h4>
         {data.sections[2].content && (
@@ -173,4 +173,4 @@ export const Footer: React.FC = () => (
       </div>
     </div>
   </footer>
-)
+);
