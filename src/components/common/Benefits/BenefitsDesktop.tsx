@@ -60,7 +60,7 @@ const BenefitsDesktop = () => {
             <img
               src="./pictures/benefits/desktop/two-plant-png.png"
               alt="benefits"
-              className="absolute mx-auto bottom-[-26px] left-[-45px] z-2   object-cover"
+              className="absolute mx-auto bottom-[-27px] left-[-45px] z-2   object-cover"
             />
             ;
           </div>

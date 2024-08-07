@@ -6,7 +6,7 @@ import { Layout } from './Layout'
 
 function Hero() {
   return (
-    <div id="inicio" className="py-[calc(80px+1rem)]">
+    <div id="inicio" className="py-[calc(80px+16px)] lg:py-[calc(80px+3rem)]">
       {/* Mobile */}
       <div className="px-[10px] mt-[16px] pb-[42px] block lg:hidden  animate-fade animate-once animate-duration-1000 animate-ease-in">
         <section>
@@ -42,7 +42,7 @@ function Hero() {
         </section>
       </div>
       {/* Desktop */}
-      <div className="min-h-screen mt-[16px] hidden lg:block animate-fade animate-once animate-duration-1000 animate-ease-in">
+      <div className=" hidden lg:block animate-fade animate-once animate-duration-1000 animate-ease-in">
         <Layout>
           <div className="grid lg:grid-cols-12  items-center gap-[64px]">
             <section className=" lg:col-span-7 flex flex-col justify-center gap-5  h-[634px] ">
