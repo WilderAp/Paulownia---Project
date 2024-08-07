@@ -131,7 +131,7 @@ export const Footer: React.FC = () => (
 
       {/* Sección 3: Blog / Newsletter */}
       <div className="col-span-1 mt-4 sm:mt-0 md:px-2 md:ml-4 space-y-4 md:space-y-[32px]">
-        <h4 className="text-[16px] md:text-[24px] mt-4 font-bold md:mt-0">
+        <h4 className="text-[16px] md:text-[24px] mt-4 font-bold md:font-normal md:mt-0">
           {data.sections[2].title}
         </h4>
         {data.sections[2].content && (
