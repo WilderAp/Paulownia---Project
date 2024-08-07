@@ -1,9 +1,9 @@
-import type React from 'react';
-import { useEffect } from 'react';
+import type React from 'react'
+import { useEffect } from 'react'
 
 interface LayoutProps {
-  maxWidth?: string;
-  children: React.ReactNode;
+  maxWidth?: string
+  children: React.ReactNode
 }
 
 export const Layout: React.FC<LayoutProps> = ({
@@ -11,10 +11,10 @@ export const Layout: React.FC<LayoutProps> = ({
   children,
 }) => {
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <div className={` w-full ${maxWidth} mx-auto px-[16px]`}>{children}</div>
-  );
-};
+  )
+}
